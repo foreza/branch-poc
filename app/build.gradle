@@ -39,8 +39,8 @@ dependencies {
 
     // Include Branch, AAID, Chrome Tabs
     implementation 'io.branch.sdk.android:library:5.+'
-    implementation 'com.google.android.gms:play-services-ads:17.2.0'
-    // implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+//    implementation 'com.google.android.gms:play-services-ads:17.2.0'
+     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
     implementation 'androidx.browser:browser:1.0.0'
 
 }
