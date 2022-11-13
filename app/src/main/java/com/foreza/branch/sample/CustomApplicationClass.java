@@ -8,13 +8,10 @@ public class CustomApplicationClass extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
         // Branch logging for debugging
         Branch.enableLogging();
+        // Enable for integration testing..
 //        Branch.enableTestMode();
-
-//
-//        // Branch object initialization
         Branch.getAutoInstance(this);
     }
 }

@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import io.branch.referral.util.BranchEvent;
 
@@ -24,6 +25,7 @@ public class BranchButtonHelper {
             @Override
             public void onClick(View view) {
                 Log.d(LOGTAG, "Clicked");
+                Toast.makeText(view.getContext(), "Button Pressed: " + event.getEventName(), Toast.LENGTH_SHORT).show();
                 event.logEvent(view.getContext());
             }
         });
